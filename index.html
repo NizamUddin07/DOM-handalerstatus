@@ -10,16 +10,24 @@
 <body>
     <h1>Final DOM Event handler</h1>
     <h3 id="handler-status">This text will change after the button pressed</h3>
-    <button onclick="handleOnClick()"> Handle event by add click function</button>
+    <button onclick="handleOnClick()"> Handle event by onClick function</button>
+    <button id="even-listener">This button is for AddListener Format</button>
 
 
     <script>
         function handleOnClick() {
 
             const handlerStatus=document.getElementById('handler-status');
-            handlerStatus.innerText='button is pressed so now this text is showing to you';
-
+            handlerStatus.innerText='button is pressed so now this text is showing cia OneClick'
         }
+
+
+        // system 2
+
+        document.getElementById('even-listener').addEventListener('click', function(){
+            const handlerStatus=document.getElementById('handler-status');
+            handlerStatus.innerText='Text update via add even listener'
+        })
 
     </script>
 
